@@ -1,4 +1,4 @@
-# password-complexity.js
+# password-topology.js
 A simple library for testing how common a password is based on the Top 100 password topologies according to [PathWell's research](https://blog.korelogic.com/blog/2014/04/04/pathwell_topologies).
 
 In the event of a breach where hashed passwords are compromised, if ``PasswordComplexity.isCommon()`` returns ``true``, the password can be cracked within several seconds.
