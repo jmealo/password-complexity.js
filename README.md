@@ -6,7 +6,7 @@ In the event of a breach where hashed passwords are compromised, if ``PasswordCo
 ## Usage
 ```javascript
   PasswordComplexity.isCommon('Boulder14'); // true
-  PasswordComplexity.isCommon('Boulder14'); // 1, this is the most common toplogy (pattern)
+  PasswordComplexity.isCommon('Boulder14'); // 1 (this is the most common topology)
 ```
 
 ## Todo
