@@ -9,7 +9,13 @@ In the event of a breach where hashed passwords are compromised, if ``PasswordCo
   PasswordComplexity.isCommon('Boulder14'); // 1 (this is the most common topology)
 ```
 
-## Todo
+## Performance
+On a modern MacBook Pro, this can check against the top 500 passwords at **1.4 million passwords per second**. Regular expressions were evaluated and were much slower. The ``topologies`` array is ordered by most common to least common topology, so ``indexOf`` is faster than an property lookup on an object in most JavaScript engines.
+
+If you're interested in seeing some alternative implementations, check out this jsPerf:
+http://jsperf.com/pathwell/2
+
+## TODO
 1. Provide end user helpful hints to pick a stronger password
 2. Do not allow the current year as a suffix
 3. Do not allow the domain or name of site as the prefix
